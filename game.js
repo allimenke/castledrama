@@ -1,11 +1,8 @@
 function start()
 {
-
+document.getElementById('startButton').style.visibility="hidden";
+document.getElementById('outputdiv').innerHTML="<input type=\"text\" id=\"name\" size=15 value=\"\">"
 }
-function pickName()
-{
-}
-
 function enterCastle()
 {
 
