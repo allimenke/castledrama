@@ -1,18 +1,20 @@
+function nextPage(curr) {
+
+var next, currPage, nextPage;
+next=curr+1;
+currPage=document.getElementById('page' + curr);
+nextPage=document.getElementById('page' + next);
+
+currPage.style.display='none';
+nextPage.style.display='block';
+}
+
 function start()
 {
-document.getElementById('startButton').style.visibility="hidden";
-document.getElementById('outputdiv').innerHTML="<input type=\"text\" id=\"name\" size=15 value=\"\">"
+document.getElementById('startPage').style.display='block';
+document.getElementById('helpPage').style.display='block';
 }
-function enterCastle()
-{
 
-}
-function firstRoomChoice(firstChoice)
-{
-if(firstChoice==='Right')
-{
-
-}
 function help()
 {
 alert('To play the game you must first pick the name of the prince that will help save the princess. '+
@@ -21,6 +23,4 @@ alert('To play the game you must first pick the name of the prince that will hel
 }
 
 
-
-}
  
