@@ -19,12 +19,6 @@ function  name()
 {
 prince=document.getElementById('nameBox').value;
 }
-function Right()
-{
-
-
-
-}
 
 
 function help()
