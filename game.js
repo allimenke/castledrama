@@ -12,13 +12,12 @@ nextPag.style.display= 'block';
 
 function start()
 {
-document.getElementById('startPage').style.display='block';
-document.getElementById('helpPage').style.display='block';
+document.getElementById('page0').style.display='block';
 }
 
 function pickPrince()
 {
-document.getElementById('page0').innerHTML='Once upon a time in medieval times, '+
+document.getElementById('page1').innerHTML='Once upon a time in medieval times, '+
 'there was a war.  It was between Allitopia and Plante Castle(the enemy).  It was a long '+
 'and deadly war.  One day the Plante knights captured the princess of Allitopia and took '+
 'her back to the castle and threw her in the dungeon.  In order to make sure she didn’t '+
