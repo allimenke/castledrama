@@ -3,24 +3,30 @@
     <title>Castle Drama</title>
     <script type="text/javascript"
     src="game.js"></script>
+
+    <style type="text/css">
+	  div {display:none; }
+    </style>
   </head>
- <body style="background-color:lightgrey"
-        onload="start();">
+ <body style="background-color:lightgrey";
+	onload="start();">
   
   <div style="text-align:center">
     <h2>Castle Drama</h2>
-    
-    <img src="castle.gif" alt="Castle">
-    <br>
-    <input type="button" value="Start the Game"
+  </div>
+	<div id="startPage">  
+    	<img src="castle.gif" alt="Castle">
+    	<br>
+    	<input type="button" value="Start the Game"
                  onclick="start()";>
-     </br>
-     <input type="button" value="Click for Help"
+     	</br>
+	</div>
+	<div id="helpPage"
+     		style="text-align:right">
+     	<input type="button" value="Click for Help"
             onclick="help()";>
 
- </div>
-    
-    <div id="outputDiv"></div>
+ 	</div>
   </body>
 </html>
   
