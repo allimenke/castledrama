@@ -6,7 +6,7 @@ currPage=document.getElementById('page' + curr);
 nextPag=document.getElementById('page' + next);
 
 currPage.style.display= 'none';
-nextPag.style.display= 'block';
+nextPage.style.display= 'block';
 
 }
 
