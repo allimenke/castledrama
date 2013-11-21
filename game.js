@@ -1,12 +1,13 @@
 function nextPage(curr) {
 
-var next, currPage, nextPage;
+var next, currPage, nextPag;
 next=curr+1;
 currPage=document.getElementById('page' + curr);
-nextPage=document.getElementById('page' + next);
+nextPag=document.getElementById('page' + next);
 
-currPage.style.display='none';
-nextPage.style.display='block';
+currPage.style.display= 'none';
+nextPag.style.display= 'block';
+
 }
 
 function start()
