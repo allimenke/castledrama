@@ -1,7 +1,8 @@
-function nextPage(curr) {
+function nextPage(curr) 
+{
 
 var next, currPage, nextPag;
-next=curr+1;
+next=curr+ 1;
 currPage=document.getElementById('page' + curr);
 nextPag=document.getElementById('page' + next);
 
@@ -14,6 +15,16 @@ function start()
 {
 document.getElementById('page0').style.display='block';
 }
+function  name()
+{
+prince=document.getElementById('nameBox').value;
+}
+function Right()
+{
+
+
+
+}
 
 
 function help()
@@ -22,6 +33,7 @@ alert('To play the game you must first pick the name of the prince that will hel
 'You will have to navigate through each room but choosing if you would like to run, fight, or pick up certain items. '+
 'When you encounter different enemies, only certain items will defeat them. '+ 'Best of luck saving the princess!')
 }
+
 
 
  
