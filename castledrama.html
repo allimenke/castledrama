@@ -62,15 +62,26 @@
             There is a sword on the floor near you.<br>
                Do you wish to pick up the sword?</br></p>
         <input type="button" value="Yes"
-        onclick="swordTrue();">
+        onclick="sword(true);">
       
         <input type="button" value="No"
-        onclick="swordFalse();">
+        onclick="sword(false);">
        <br>
        <input type="button" value="Keep Walking"
        onclick="changePage('bridgeRight', 'bridgeWalk');">
         </div>
  <div id="bridgeWalk">
+  <p> A knight is in your path to the other side!<br>
+                 Chose what to do!</br></p>
+  <p>You can fight the Knight,<br>
+     Run back to castle entrance<br>
+     Or Jump off the Bridge!</br></p>            
+      <input type="button" value="Fight"
+       onclick="fight1()";>
+       <input type="button" value="Run"
+       onclick="changePage('bridgeWalk', 'enterCastle');">
+      <input type="button" value="Jump"
+     onclick="jump();">
  </div>
  
   </body>
