@@ -38,7 +38,16 @@ function swordFalse()
 swordNo=document.getElementById('bridgeRight').value=false;
 }
 
-
-
+function sword(hasSword)
+{
+if (swordYes===true)
+{
+alert('You Picked up the Sword')
+}
+else 
+{
+alert('You cannot fight the knight, you die')
+}
+}
 
  
