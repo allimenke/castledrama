@@ -44,9 +44,9 @@
     <h3>You Have Entered the Enemies Castle</h3>
         <br>
         <p>There are two ways to go:</P>
-        <input type="button" id="LeftButton" value="Left"
+        <input type="button"  value="Left"
         onclick="changePage('enterCastle','kitchenLeft');">
-         <input type="button" id="RightButton" value="Right"
+         <input type="button"  value="Right"
         onclick="changePage('enterCastle','bridgeRight');">
      </div>
  <div id="kitchenLeft">
@@ -54,8 +54,24 @@
          Take a break to eat and head back to the entrance</br><p>
      <input type="button" value="Go Back"
      onclick="changePage('kitchenLeft', 'enterCastle');">
-     
- </div>    
+ </div>
+ 
+ <div id="bridgeRight">
+        <h4> Castle Bridge </h4>
+        <p> You have walked onto the castle bridge <br>
+            There is a sword on the floor near you.<br>
+               Do you wish to pick up the sword?</br></p>
+        <input type="button" value="Yes"
+        onclick="swordTrue();">
+        <input type="button" value="No"
+        onclick="swordFalse();">
+       <br>
+       <input type="button" value="Keep Walking"
+       onclick="changePage('bridgeRight', 'bridgeWalk');">
+        </div>
+ <div id="bridgeWalk">
+ </div>
+ 
   </body>
 </html>
   
