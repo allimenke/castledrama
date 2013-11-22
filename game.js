@@ -28,25 +28,16 @@ alert('To play the game you must first pick the name of the prince that will hel
 'When you encounter different enemies, only certain items will defeat them. '+ 'Best of luck saving the princess!')
 }
 
-function swordTrue()
-{
-swordYes=document.getElementById('bridgeRight').value=true;
-}
-
-function swordFalse()
-{
-swordNo=document.getElementById('bridgeRight').value=false;
-}
 
 function sword(hasSword)
 {
-if (swordYes===true)
+if (hasSword===true)
 {
-alert('You Picked up the Sword')
+alert('You Picked up the Sword!')
 }
 else 
 {
-alert('You cannot fight the knight, you die')
+alert('You did not pick up the Sword!')
 }
 }
 
