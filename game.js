@@ -1,10 +1,9 @@
-function nextPage(curr) 
+function changePage(curr,next) 
 {
 
-var next, currPage, nextPag;
-next=curr+ 1;
-currPage=document.getElementById('page' + curr);
-nextPag=document.getElementById('page' + next);
+var currPage, nextPag;
+currPage=document.getElementById(curr);
+nextPag=document.getElementById(next);
 
 currPage.style.display= 'none';
 nextPag.style.display= 'block';
@@ -13,7 +12,7 @@ nextPag.style.display= 'block';
 
 function start()
 {
-document.getElementById('page0').style.display='block';
+document.getElementById('start').style.display='block';
 }
 function  name()
 {
