@@ -31,13 +31,11 @@ alert('To play the game you must first pick the name of the prince that will hel
 function swordTrue()
 {
 swordYes=document.getElementById('bridgeRight').value=true;
-document.getElementsById('bridgeRight').style.display="block";
 }
 
 function swordFalse()
 {
 swordNo=document.getElementById('bridgeRight').value=false;
-document.getElementsById('bridgeRight').style.display="block";
 }
 
 
