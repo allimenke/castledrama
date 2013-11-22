@@ -1,10 +1,5 @@
-
 function changePage(curr,next) 
 {
-var currPage, nextPag;
-function nextPage(curr, next) 
-{
-
 var currPage, nextPag;
 
 currPage=document.getElementById(curr);
