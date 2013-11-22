@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 function changePage(curr,next) 
 {
 
 var currPage, nextPag;
+=======
+function nextPage(curr, next) 
+{
+
+var currPage, nextPag;
+
+>>>>>>> cce2f404876afa49a35587c1b5f2eccc27193990
 currPage=document.getElementById(curr);
 nextPag=document.getElementById(next);
 
@@ -12,7 +20,11 @@ nextPag.style.display= 'block';
 
 function start()
 {
+<<<<<<< HEAD
 document.getElementById('start').style.display='block';
+=======
+document.getElementById('startPage').style.display='block';
+>>>>>>> cce2f404876afa49a35587c1b5f2eccc27193990
 }
 function  name()
 {
