@@ -1,3 +1,7 @@
+
+function changePage(curr,next) 
+{
+var currPage, nextPag;
 function nextPage(curr, next) 
 {
 
@@ -14,6 +18,7 @@ nextPag.style.display= 'block';
 function start()
 {
 document.getElementById('startPage').style.display='block';
+
 }
 function  name()
 {
