@@ -1,4 +1,4 @@
-function changePage(curr, next) 
+function changePage(curr,next) 
 {
 var currPage, nextPag;
 
