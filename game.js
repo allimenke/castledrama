@@ -61,11 +61,7 @@ function fight1()
   alert('You have defeated the Knight' + 'Move onto the next room');
   moveOn();
   }
-  else 
-  {
-  alert('The Knight killed you.' + 'Game Over');
-  reStart();
-  }
+ 
 }
 
 function jump()
