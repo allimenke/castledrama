@@ -76,7 +76,7 @@ reStart();
 function fight2()
 {
 var person = ['wizard','knight'];
-enemy=person[Math.floor(math.random()*person.length)];
+enemy=person[Math.floor(Math.random()*person.length)];
 if(enemy==='wizard')
 {
 alert('Game Over You Died');
