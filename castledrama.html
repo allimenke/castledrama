@@ -89,8 +89,8 @@
  
  <div id="longHallway">
   <h5>You Have Entered a Long Hallway</h5>
-     <p>There is a Wizard or Knight in your Way</P></br>
-               <p>Chose what to do</p>
+     <p>YOu have encountered either a wizard or a knight</P></br>
+               <p>Chose fight to find out which you encountered or Run away</p>
      <p>You can Fight or Run</P>
      <br>
      <input type="button" value="Fight"
@@ -104,7 +104,7 @@
      onclick="changePage('longHallway','startPage');">
  </div>
  
- <div id="DragonRoom">
+ <div id="dragonRoom">
  <h6> Dragon Room </h6>
  <p>You have Enter the Dragon Room</p><br>
     <p>There is a spear on the floor<br>
@@ -116,10 +116,11 @@
         onclick="spear(false);">
        <br>
        <input id="keepWalkButton2" style="visibility:hidden" type="button" value="Go to the Dragon"
-       onclick="changePage('DragonRoom', 'DragonRoom2');">
+       onclick="changePage('dragonRoom', 'dragonRoom2');">
         </div>
         
-    <div id="DragonRoom2">
+    <div id="dragonRoom2">
+    <h7> Dragon Room </h7>
     <p>The Dragon is blocking your way to the princess</P>
      <input type="button" value="Fight"
      onclick="fight3();">
