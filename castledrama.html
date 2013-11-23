@@ -90,12 +90,15 @@
  <div id="longHallway">
   <h5>You Have Entered a Long Hallway</h5>
      <p>There is a Wizard or Knight in your Way</P></br>
-               <p>Chose what to do</br></p>
-     <p>You can Fight or RUn</P>
+               <p>Chose what to do</p>
+     <p>You can Fight or Run</P>
      <br>
      <input type="button" value="Fight"
      onclick="fight2();">
-     
+     <input type="button" value="Run"
+     onclick="changePage('longHallway','bridgeWalk');">
+     <input id="moveOnButton2" style="visibility:hidden" type="button" value="Walk down the Hallway to next room"
+     onclick="changePage('longHallway','dragonRoom');"> 
  </div>
  
   </body>
