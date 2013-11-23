@@ -50,12 +50,14 @@ return theSword;
 
 function fight1()
 {
-  if(sword1()===true){
+var winorlose;
+winorlose=sword();
+  if(winorlose===true){
   alert('You have defeated the Knight' + 'Move onto the next room');
   moveOn();
   }
  else
- if(sword1()===false){
+ if(winorlose===false){
  alert('The knight Killed You!'+'Game Over!');
  reStart();
  }
