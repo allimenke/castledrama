@@ -32,23 +32,31 @@ alert('To play the game you must first pick the name of the prince that will hel
 
 function sword(hasSword)
 {
-if (hasSword===true)
+if(hasSword===true)
 {
 alert('You Picked up the Sword!');
 keepWalk();
-return true;
 }
 else 
 {
 alert('You did not pick up the Sword!');
 keepWalk();
+}
+}
+function sword1(theSword)
+{
+if(theSword===true)
+{
+return true;
+}
+else
 return false;
 }
-}
+
 
 function fight1()
 {
-  if (sword()===true)
+  if(sword1()===true)
   {
   alert('You have defeated the Knight' + 'Move onto the next room');
   moveOn();
