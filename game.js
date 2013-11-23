@@ -18,6 +18,7 @@ document.getElementById('startPage').style.display='block';
 function  name()
 {
 prince=document.getElementById('nameBox').value;
+alert('Your name is '+prince);
 }
 
 
