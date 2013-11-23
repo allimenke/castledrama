@@ -63,9 +63,9 @@ alert('You commited suicide, Game Over');
 } 
 function moveOn()
 {
-document.getElementById('moveOnButton').style.visibility="visibile";
+document.getElementById('moveOnButton').style.visibility="visible";
 }
 function reStart()
 {
-document.getElementById('gameOverButton').style.visibility="visibile";
+document.getElementById('gameOverButton').style.visibility="visible";
 } 
