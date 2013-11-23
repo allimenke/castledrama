@@ -104,6 +104,28 @@
      onclick="changePage('longHallway','startPage');">
  </div>
  
+ <div id="DragonRoom">
+ <h6> Dragon Room </h6>
+ <p>You have Enter the Dragon Room</p><br>
+    <p>There is a spear on the floor<br>
+    Do you wish to pick it up?</p>
+   <input type="button" value="Yes"
+        onclick="spear(true);">
+  
+     <input type="button" value="No"
+        onclick="spear(false);">
+       <br>
+       <input id="keepWalkButton2" style="visibility:hidden" type="button" value="Go to the Dragon"
+       onclick="changePage('DragonRoom', 'DragonRoom2');">
+        </div>
+        
+    <div id="DragonRoom2">
+    <h7> Dragon Room </h7>
+    <p>The Dragon is blocking your way to the princess</P>
+     <input type="button" value="Fight"
+     onclick="fight3();">
+    
+ </div>
   </body>
 </html>
   
