@@ -20,6 +20,11 @@ function princeName(prince)
 alert('Your name is '+ prince);
 pickedName();
 }
+var prince={
+name: document.getElementById('nameBox').value;
+hasSword: '';
+hasSpear: '';
+};
 
 
 function help()
@@ -30,34 +35,30 @@ alert('To play the game you must first pick the name of the prince that will hel
 }
 
 
-function sword(hasSword)
+function sword(pickup)
 {
-if(hasSword===true)
+if(pickup===true)
 {
 alert('You Picked up the Sword!');
+prince.hasSword='yes';
 keepWalk();
 }
 else 
 {
 alert('You did not pick up the Sword!');
+prince.hasSword='no';
 keepWalk();
 }
-}
-function sword1(theSword)
-{
-return theSword;
 }
 
 function fight1()
 {
-var winorlose;
-winorlose=sword1();
-  if(winorlose===true){
+
+  if(prince.hasSword==='yes'){
   alert('You have defeated the Knight' + 'Move onto the next room');
   moveOn();
   }
  else
- if(winorlose===false){
  alert('The knight Killed You!'+'Game Over!');
  reStart();
  }
