@@ -21,10 +21,10 @@ alert('Your name is '+ name);
 pickedName();
 }
 var prince={
-name: document.getElementById('nameBox').value;
-hasSword: '';
-hasSpear: '';
-}
+name: document.getElementById('nameBox').value,
+hasSword: '',
+hasSpear: '',
+};
 
 
 function help()
