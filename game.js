@@ -18,6 +18,7 @@ document.getElementById('startPage').style.display='block';
 var prince={
 name: '',
 hasSword: 'yes',
+hasSpear: 'yes',
 };
 
 
@@ -88,6 +89,24 @@ alert('You defeated the Knight!  You take the key from the Knight and advance to
 goOn();
 }
 }
+
+function fight3()
+{
+
+  if(prince.hasSword==='yes'){
+  alert('You have defeated the Dragon' + 'Go Save the Princess');
+  goToPrincess();
+  }
+ else
+ {
+ alert('The Dragon Killed You!'+'Game Over!');
+ reStart3();
+ }
+}
+
+
+
+
 
 
 function moveOn()
