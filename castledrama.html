@@ -78,7 +78,20 @@
        onclick="changePage('bridgeWalk', 'enterCastle');">
       <input type="button" value="Jump"
      onclick="jump();">
+     
+     <input id="moveOnButton" style="visibility:hidden" type="button" value="Go Across Bridge to Next Room"
+      onclick="changeRoom('bridgeWalk','longHallway');">
+     <input id="gameOverButton" style="visibility:hidden" type="button" value="Start Over"
+     onclick="changeRoom('bridgeWalk','startPage');">
  </div>
+ 
+ <div id="longHallway">
+ {
+  <h5>You Have Entered a Long Hallway</h5>
+   
+ 
+ 
+ }
  
   </body>
 </html>
