@@ -84,7 +84,7 @@ reStart2();
 }
 else if(enemy==='knight')
 {
-alert('You defeated the Knigh!  You take the key from the Knight and advance to the next room');
+alert('You defeated the Knight!  You take the key from the Knight and advance to the next room');
 goOn();
 }
 }
