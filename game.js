@@ -47,7 +47,7 @@ return false;
 
 function fight1()
 {
-  if (sword()===true)
+  if (sword(hasSword)===true)
   {
   alert('You have defeated the Knight' + 'Move onto the next room');
   moveOn();
