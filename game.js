@@ -15,9 +15,9 @@ function start()
 document.getElementById('startPage').style.display='block';
 
 }
-function princeName(prince)
+function princeName(name)
 {
-alert('Your name is '+ prince);
+alert('Your name is '+ name);
 pickedName();
 }
 var prince={
