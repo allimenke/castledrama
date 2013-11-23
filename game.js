@@ -18,6 +18,7 @@ document.getElementById('startPage').style.display='block';
 function princeName(prince)
 {
 alert('Your name is '+ prince);
+pickedName();
 }
 
 
