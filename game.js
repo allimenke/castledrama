@@ -15,15 +15,18 @@ function start()
 document.getElementById('startPage').style.display='block';
 
 }
+var prince={
+name: '',
+hasSword: 'yes',
+};
+
+
 function princeName(pname)
 {
 alert('Your name is '+ pname);
+prince.name=pname;
 pickedName();
 }
-var prince={
-name: 'Matt',
-hasSword: 'yes',
-};
 
 
 function help()
