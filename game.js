@@ -34,11 +34,31 @@ function sword(hasSword)
 if (hasSword===true)
 {
 alert('You Picked up the Sword!')
+return true;
 }
 else 
 {
 alert('You did not pick up the Sword!')
+return false;
 }
 }
+
+function fight1()
+{
+if (sword()===true)
+{
+alert('You have defeated the Knight' + 'Move onto the next room')
+}
+else 
+{
+alert('The Knight killed you.' + 'Game Over')
+}
+}
+
+function jump()
+{
+alert('You commited suicide, Game Over')
+} 
+
 
  
