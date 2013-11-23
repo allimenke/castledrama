@@ -34,11 +34,13 @@ function sword(hasSword)
 if (hasSword===true)
 {
 alert('You Picked up the Sword!');
+keepWalk();
 return true;
 }
 else 
 {
 alert('You did not pick up the Sword!');
+keepWalk();
 return false;
 }
 }
@@ -70,3 +72,14 @@ function reStart()
 {
 document.getElementById('gameOverButton').style.visibility="visible";
 } 
+function keepWalk()
+{
+document.getElementById('keepWalkButton').style.visibility="visible";
+}
+function pickedName()
+{
+document.getElementById('enteredName').style.visibility="visible";
+
+}
+
+
