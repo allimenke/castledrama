@@ -60,6 +60,7 @@ function fight1()
 function jump()
 {
 alert('You commited suicide, Game Over');
+reStart();
 } 
 function moveOn()
 {
