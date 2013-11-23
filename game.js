@@ -72,6 +72,13 @@ function jump()
 alert('You commited suicide, Game Over');
 reStart();
 } 
+
+function fight2()
+var person = [wizard,knight]
+Math.floor(Math.random(person))
+
+
+
 function moveOn()
 {
 document.getElementById('moveOnButton').style.visibility="visible";
