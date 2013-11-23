@@ -45,15 +45,7 @@ keepWalk();
 }
 function sword1(theSword)
 {
-if(theSword===true)
-{
-return true;
-}
-else
-if(theSword===false)
-{
-return false;
-}
+return theSword;
 }
 
 function fight1()
