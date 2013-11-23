@@ -15,11 +15,9 @@ function start()
 document.getElementById('startPage').style.display='block';
 
 }
-function  name()
+function name()
 {
-var prince;
-prince = document.getElementById('nameBox').value;
-alert('Your name is '+ prince);
+alert('Your name is '+ document.getElementById('nameBox').value);
 }
 
 
