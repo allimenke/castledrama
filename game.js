@@ -15,15 +15,15 @@ function start()
 document.getElementById('startPage').style.display='block';
 
 }
-function princeName(name)
+function princeName(prince)
 {
-alert('Your name is '+ name);
+alert('Your name is '+ prince);
 pickedName();
 }
 var prince={
-name: document.getElementById('nameBox').value,
-hasSword: '',
-hasSpear: '',
+name: document.getElementById('nameBox').value;
+hasSword: '';
+hasSpear: '';
 };
 
 
@@ -59,6 +59,7 @@ function fight1()
   moveOn();
   }
  else
+ {
  alert('The knight Killed You!'+'Game Over!');
  reStart();
  }
