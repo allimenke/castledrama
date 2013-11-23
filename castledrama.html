@@ -120,10 +120,14 @@
         </div>
         
     <div id="dragonRoom2">
-    <h7> Dragon Room </h7>
     <p>The Dragon is blocking your way to the princess</P>
      <input type="button" value="Fight"
      onclick="fight3();">
+     <input id="moveOnButton2" style="visibility:hidden" type="button" value="Walk down the Hallway to next room"
+     onclick="changePage('dragonRoom2','princessRoom');"> 
+     <input id="gameOverButton3" style="visibility:hidden" type="button" value="Start Over"
+     onclick="changePage('dragonRoom2','startPage');">
+ </div>
     
  </div>
   </body>

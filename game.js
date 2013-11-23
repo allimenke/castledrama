@@ -151,6 +151,16 @@ function reStart2()
 {
 document.getElementById('gameOverButton2').style.visibility="visible";
 } 
+function keepWalk2()
+{
+document.getElementById('keepWalkButton2').style.visibility="visible";
+
+}
+function reStart3()
+{
+document.getElementById('gameOverButton3').style.visibility="visible";
+} 
+
 
 
 
