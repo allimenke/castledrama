@@ -15,12 +15,12 @@ function start()
 document.getElementById('startPage').style.display='block';
 
 }
-function princeName(name)
+function princeName(pname)
 {
-alert('Your name is '+ name);
+alert('Your name is '+ pname);
 pickedName();
 }
-prince={
+var prince={
 name: document.getElementById('nameBox').value,
 hasSword: "",
 hasSpear: "",
