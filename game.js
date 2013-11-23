@@ -90,6 +90,22 @@ goOn();
 }
 }
 
+function spear(pickup2)
+{
+if(pickup2===true)
+{
+alert('You Picked up the Spear!');
+prince.hasSpear='yes';
+keepWalk2();
+}
+else 
+{
+alert('You did not pick up the Spear!');
+prince.hasSpear='no';
+keepWalk2();
+}
+}
+
 function fight3()
 {
 
