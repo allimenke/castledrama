@@ -51,7 +51,7 @@ return theSword;
 function fight1()
 {
 var winorlose;
-winorlose=sword();
+winorlose=sword1();
   if(winorlose===true){
   alert('You have defeated the Knight' + 'Move onto the next room');
   moveOn();
