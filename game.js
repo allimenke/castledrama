@@ -20,7 +20,7 @@ function princeName(name)
 alert('Your name is '+ name);
 pickedName();
 }
-var prince={
+prince={
 name: document.getElementById('nameBox').value,
 hasSword: "",
 hasSpear: "",
