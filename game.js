@@ -75,8 +75,16 @@ reStart();
 
 function fight2()
 {
-var person = [wizard,knight];
-Math.floor(Math.random(person));
+var person = ['wizard','knight'];
+enemy=Math.floor(Math.random(person));
+if(enemy==='wizard')
+{
+alert('Game Over You Died');
+}
+else if('knight')
+{
+alert('You take the key from the Knight and advance to the next room');
+}
 }
 
 
