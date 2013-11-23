@@ -109,7 +109,7 @@ keepWalk2();
 function fight3()
 {
 
-  if(prince.hasSword==='yes'){
+  if(prince.hasSpear==='yes'){
   alert('You have defeated the Dragon' + 'Go Save the Princess');
   goToPrincess();
   }
