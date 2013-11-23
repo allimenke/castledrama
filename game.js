@@ -74,9 +74,10 @@ reStart();
 } 
 
 function fight2()
-var person = [wizard,knight]
-Math.floor(Math.random(person))
-
+{
+var person = [wizard,knight];
+Math.floor(Math.random(person));
+}
 
 
 function moveOn()
@@ -96,5 +97,11 @@ function pickedName()
 document.getElementById('enteredName').style.visibility="visible";
 
 }
+function goOn()
+{
+document.getElementById('moveOnButton2').style.visibility="visible";
+
+}
+
 
 
