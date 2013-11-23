@@ -22,8 +22,8 @@ pickedName();
 }
 var prince={
 name: document.getElementById('nameBox').value,
-hasSword: '',
-hasSpear: '',
+hasSword: "",
+hasSpear: "",
 };
 
 
@@ -40,13 +40,13 @@ function sword(pickup)
 if(pickup===true)
 {
 alert('You Picked up the Sword!');
-prince.hasSword='yes';
+prince.hasSword="yes";
 keepWalk();
 }
 else 
 {
 alert('You did not pick up the Sword!');
-prince.hasSword='no';
+prince.hasSword="no";
 keepWalk();
 }
 }
