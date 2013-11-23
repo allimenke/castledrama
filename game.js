@@ -24,7 +24,7 @@ var prince={
 name: document.getElementById('nameBox').value;
 hasSword: '';
 hasSpear: '';
-};
+}
 
 
 function help()
