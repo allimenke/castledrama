@@ -17,7 +17,9 @@ document.getElementById('startPage').style.display='block';
 }
 function  name()
 {
-alert('Your name is '+ document.getElementById('nameBox').value);
+var prince;
+prince = document.getElementById('nameBox').value;
+alert('Your name is '+ prince);
 }
 
 
