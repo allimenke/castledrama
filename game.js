@@ -80,10 +80,12 @@ enemy=Math.floor(Math.random(person));
 if(enemy==='wizard')
 {
 alert('Game Over You Died');
+reStart();
 }
 else if('knight')
 {
 alert('You take the key from the Knight and advance to the next room');
+goOn();
 }
 }
 
