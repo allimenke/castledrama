@@ -112,7 +112,7 @@ function goOn()
 document.getElementById('moveOnButton2').style.visibility="visible";
 
 }
-function reStart()
+function reStart2()
 {
 document.getElementById('gameOverButton2').style.visibility="visible";
 } 
