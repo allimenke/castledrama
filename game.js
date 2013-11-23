@@ -50,6 +50,7 @@ if(theSword===true)
 return true;
 }
 else
+if(theSword===false)
 {
 return false;
 }
