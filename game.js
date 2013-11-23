@@ -79,12 +79,12 @@ var person = ['wizard','knight'];
 enemy=person[Math.floor(Math.random()*person.length)];
 if(enemy==='wizard')
 {
-alert('Game Over You Died');
-reStart();
+alert('The Wizard defeated you!  Game Over');
+reStart2();
 }
 else if(enemy==='knight')
 {
-alert('You take the key from the Knight and advance to the next room');
+alert('You defeated the Knigh!  You take the key from the Knight and advance to the next room');
 goOn();
 }
 }
@@ -112,6 +112,10 @@ function goOn()
 document.getElementById('moveOnButton2').style.visibility="visible";
 
 }
+function reStart()
+{
+document.getElementById('gameOverButton2').style.visibility="visible";
+} 
 
 
 
