@@ -124,13 +124,28 @@
      <input type="button" value="Fight"
      onclick="fight3();">
      <br>
-     <input id="moveOnButton2" style="visibility:hidden" type="button" value="Walk down the Hallway to next room"
-     onclick="changePage('dragonRoom2','princessRoom');"> 
+     <input id="moveOnButton2" style="visibility:hidden" type="button" value="Go unlock the door to the Princess"
+     onclick="changePage('dragonRoom2','unlockDoor');"> 
      <input id="gameOverButton3" style="visibility:hidden" type="button" value="Start Over"
      onclick="changePage('dragonRoom2','startPage');">
  </div>
     
- </div>
+<div id="unlockDoor">
+  <p>You have unlocked the door to where the princess is prisoner<br>
+    Go reunit with your love!</P>
+    <input type="button" value="Go to the Princess"
+    onclick="changePage('unlockDoor','princessRoom');">
+    </div>
+ <div id="princessRoom">
+ <p> You have saved the Princess! <br>
+     You have won the Game!</P>
+     <br>
+    <p> Your village has thrown you a party to celebrate<br>
+        Go back to your village to Party!</P>
+     <input type="button" value="Go to the Party"
+     onclick="changePage('princessRoom','villageParty');">
+     </div>
+     
   </body>
 </html>
   
