@@ -43,13 +43,13 @@ function sword(pickup)
 {
 if(pickup===true)
 {
-alert('You Picked up the Sword!');
+alert('You Picked up the Sword Prince' + prince.name + '!');
 prince.hasSword='yes';
 keepWalk();
 }
 else 
 {
-alert('You did not pick up the Sword!');
+alert('You did not pick up the Sword' + prince.name + '!');
 prince.hasSword='no';
 keepWalk();
 }
@@ -59,20 +59,20 @@ function fight1()
 {
 
   if(prince.hasSword==='yes'){
-  alert('You have defeated the Knight prince ' +  'Move onto the next room');
+  alert('You have defeated the Knight Prince ' + prince.name + '!' +  'Move onto the next room');
 
   moveOn();
   }
  else
  {
- alert('The knight Killed You! '+'Game Over!');
+ alert('The knight Killed You! '+'Game Over Prince ' + prince.name + '.');
  reStart();
  }
 }
 
 function jump()
 {
-alert('You commited suicide, Game Over Prince ' + prince.name);
+alert('You commited suicide, Game Over Prince ' + prince.name + '.');
 reStart();
 } 
 
@@ -82,12 +82,12 @@ var person = ['wizard','knight'];
 enemy=person[Math.floor(Math.random()*person.length)];
 if(enemy==='wizard')
 {
-alert('The Wizard defeated you! ' + 'Game Over');
+alert('The Wizard defeated you! ' + 'Game Over Prince ' + prince.name + '!');
 reStart2();
 }
 else if(enemy==='knight')
 {
-alert('You defeated the Knight! ' + 'You take the key from the Knight and advance to the next room');
+alert('You defeated the Knight Prince ' + prince.name + '!' + 'You take the key from the Knight and advance to the next room');
 prince.hasKey='yes';
 goOn();
 }
@@ -97,13 +97,13 @@ function spear(pickup2)
 {
 if(pickup2===true)
 {
-alert('You Picked up the Spear!');
+alert('You Picked up the Spear Prince ' + prince.name + '!');
 prince.hasSpear='yes';
 keepWalk2();
 }
 else 
 {
-alert('You did not pick up the Spear!');
+alert('You did not pick up the Spear Prince ' + prince.name + '!');
 prince.hasSpear='no';
 keepWalk2();
 }
@@ -113,12 +113,12 @@ function fight3()
 {
 
   if(prince.hasSpear==='yes'){
-  alert('You have defeated the Dragon. ' + 'Go Save the Princess');
+  alert('You have defeated the Dragon Prince ' + prince.name + '!' + 'Go Save the Princess');
   goToPrincess();
   }
  else
  {
- alert('The Dragon Killed You! '+'Game Over!');
+ alert('The Dragon Killed You! '+'Game Over Prince ' + prince.name + '!');
  reStart3();
  }
 }
