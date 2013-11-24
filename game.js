@@ -72,7 +72,7 @@ function fight1()
 
 function jump()
 {
-alert('You commited suicide, Game Over Prince ' + pname);
+alert('You commited suicide, Game Over Prince ' + prince.name);
 reStart();
 } 
 
