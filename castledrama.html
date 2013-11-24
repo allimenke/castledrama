@@ -2,172 +2,171 @@
 <html>
   <head>
     <title>Castle Drama</title>
-    <script type="text/javascript"
-    src="game.js"></script>
-    <link rel="stylesheet" type="text/css" href="castled.css">
-   
+      <script type="text/javascript"
+        src="game.js"></script>
+        <link rel="stylesheet" type="text/css" href="castled.css">
   </head>
- <body onload="start();">
-  
+   <body onload="start();">
     <h1>Castle Drama</h1>
-  
-	<div id="startPage">  
-    	<img src="castle.gif" alt="Castle">
-    	<br>
-    	<input type="button" value="Start the Game"
-                 onclick="changePage('startPage','pickName');">
-    </br>
-     	<input type="button" value="Click for Help"
-            onclick="help();">
-  </div>
-  
-   <div id="pickName">
-        <h2>Pick Name For Your Prince:</h2>
+    
+	  <div id="startPage">  
+    	 <img src="castle.gif" alt="Castle">
+    	 <br>
+    	 <input type="button" value="Start the Game"
+       onclick="changePage('startPage','pickName');">
+       </br>
+     	 <input type="button" value="Click for Help"
+       onclick="help();">
+    </div>
+    
+    <div id="pickName">
+       <h2>Pick Name For Your Prince:</h2>
          <input type="text" id="nameBox" size=20 value="">
          <input type="button" value="Enter Name"
          onclick="princeName(document.getElementById('nameBox').value);">
-       <p>Once upon a time in medieval times there was a war.  It was between Allitopia and Plante Castle(the enemy).<br> 
-        It was a long and deadly war.  One day the Plante knights captured the princess of Allitopia and took<br>
-        her back to the castle and threw her in the dungeon.  In order to make sure she did not <br>
-        escape, they made the vicious dragon guard the dungeon door.  Once the prince found out <br>
-        the game begins</br></p>
-         
+         <p>Once upon a time in medieval times there was a war.  It was between Allitopia and Plante Castle(the enemy).<br> 
+          It was a long and deadly war.  One day the Plante knights captured the princess of Allitopia and took<br>
+          her back to the castle and threw her in the dungeon.  In order to make sure she did not <br>
+          escape, they made the vicious dragon guard the dungeon door.  Once the prince found out <br>
+          the game begins</br></p>
+    
          <input id="enteredName" style="visibility:hidden" type="button" value="Next"
          onclick="changePage('pickName','enterCastle');">
- 	</div>
- 	
- <div id="enterCastle">
-    <h3>You Have Entered the Enemies Castle</h3>
-        <br>
+ 	  </div>
+ 	  
+    <div id="enterCastle">
+     <h3>You Have Entered the Enemies Castle</h3>
+     
         <p>There are two ways to go:</P>
         <input type="button"  value="Left"
         onclick="changePage('enterCastle','kitchenLeft');">
-         <input type="button"  value="Right"
+        <input type="button"  value="Right"
         onclick="changePage('enterCastle','bridgeRight');">
-     </div>
- <div id="kitchenLeft">
- <p>You have entered the Kitchen!  However this is a dead end!<br>
-         Take a break to eat and head back to the entrance</br><p>
-     <input type="button" value="Go Back"
-     onclick="changePage('kitchenLeft', 'enterCastle');">
- </div>
- 
- <div id="bridgeRight">
-        <h4> Castle Bridge </h4>
+    </div>
+    
+    <div id="kitchenLeft">
+      <p>You have entered the Kitchen!  However this is a dead end!<br>
+      Take a break to eat and head back to the entrance</br><p>
+      <input type="button" value="Go Back"
+      onclick="changePage('kitchenLeft', 'enterCastle');">
+    </div>
+    
+    <div id="bridgeRight">
+      <h4> Castle Bridge </h4>
         <p> You have walked onto the castle bridge <br>
             There is a sword on the floor near you.<br>
-               Do you wish to pick up the sword?</br></p>
+            Do you wish to pick up the sword?</br></p>
         <input type="button" value="Yes"
         onclick="sword(true);">
-      
         <input type="button" value="No"
         onclick="sword(false);">
-       <br>
-       <input id="keepWalkButton" style="visibility:hidden" type="button" value="Keep Walking"
-       onclick="changePage('bridgeRight', 'bridgeWalk');">
-        </div>
- <div id="bridgeWalk">
-  <p> A knight is in your path to the other side!<br>
-                 Chose what to do!</br></p>
-  <p>You can fight the Knight,<br>
-     Run back to castle entrance<br>
-     Or Jump off the Bridge!</br></p>            
-      <input type="button" value="Fight"
-       onclick="fight1();">
-       <input type="button" value="Run"
-       onclick="changePage('bridgeWalk', 'enterCastle');">
-      <input type="button" value="Jump"
-     onclick="jump();">
-     
-     <br>
-     <input id="moveOnButton" style="visibility:hidden" type="button" value="Go Across Bridge to Next Room"
-      onclick="changePage('bridgeWalk','longHallway');">
-     <input id="gameOverButton" style="visibility:hidden" type="button" value="Start Over"
-     onclick="changePage('bridgeWalk','startPage');">
-     </br>
- </div>
- 
- <div id="longHallway">
-  <h5>You Have Entered a Long Hallway</h5>
-     <p>YOu have encountered either a wizard or a knight</P></br>
-               <p>Chose fight to find out which you encountered or Run away</p>
-     <p>You can Fight or Run</P>
-     <br>
-     <input type="button" value="Fight"
-     onclick="fight2();">
-     <input type="button" value="Run"
-     onclick="changePage('longHallway','bridgeWalk');">
-     <br>
-     <input id="moveOnButton2" style="visibility:hidden" type="button" value="Walk down the Hallway to next room"
-     onclick="changePage('longHallway','dragonRoom');"> 
-     <input id="gameOverButton2" style="visibility:hidden" type="button" value="Start Over"
-     onclick="changePage('longHallway','startPage');">
- </div>
- 
- <div id="dragonRoom">
- <h6> Dragon Room </h6>
- <p>You have Enter the Dragon Room</p><br>
-    <p>There is a spear on the floor<br>
-    Do you wish to pick it up?</p>
-   <input type="button" value="Yes"
-        onclick="spear(true);">
-  
-     <input type="button" value="No"
+        <br>
+        <input id="keepWalkButton" style="visibility:hidden" type="button" value="Keep Walking"
+        onclick="changePage('bridgeRight', 'bridgeWalk');">
+    </div>
+    
+    <div id="bridgeWalk">
+        <p> A knight is in your path to the other side!<br>
+            Chose what to do!</br></p>
+        <p>You can fight the Knight,<br>
+           Run back to castle entrance<br>
+           Or Jump off the Bridge!</br></p>            
+        <input type="button" value="Fight"
+        onclick="fight1();">
+        <input type="button" value="Run"
+        onclick="changePage('bridgeWalk', 'enterCastle');">
+        <input type="button" value="Jump"
+        onclick="jump();">
+        <br>
+        <input id="moveOnButton" style="visibility:hidden" type="button" value="Go Across Bridge to Next Room"
+        onclick="changePage('bridgeWalk','longHallway');">
+        <input id="gameOverButton" style="visibility:hidden" type="button" value="Start Over"
+        onclick="changePage('bridgeWalk','startPage');">
+        </br>
+    </div>
+    
+    <div id="longHallway">
+      <h5>You Have Entered a Long Hallway</h5>
+        <p>YOu have encountered either a wizard or a knight</P></br>
+        <p>Chose fight to find out which you encountered or Run away</p>
+        <p>You can Fight or Run</P>
+        <br>
+        <input type="button" value="Fight"
+        onclick="fight2();">
+        <input type="button" value="Run"
+        onclick="changePage('longHallway','bridgeWalk');">
+        <br>
+        <input id="moveOnButton2" style="visibility:hidden" type="button" value="Walk down the Hallway to next room"
+        onclick="changePage('longHallway','dragonRoom');"> 
+        <input id="gameOverButton2" style="visibility:hidden" type="button" value="Start Over"
+        onclick="changePage('longHallway','startPage');">
+    </div>
+    
+    <div id="dragonRoom">
+        <p>You have Enter the Dragon Room</p><br>
+        <p>There is a spear on the floor<br>
+        Do you wish to pick it up?</p>
+        <input type="button" value="Yes"
+        onclick="spear(true);"> 
+        <input type="button" value="No"
         onclick="spear(false);">
-       <br>
-       <input id="keepWalkButton2" style="visibility:hidden" type="button" value="Go to the Dragon"
-       onclick="changePage('dragonRoom', 'dragonRoom2');">
-        </div>
+        <br>
+        <input id="keepWalkButton2" style="visibility:hidden" type="button" value="Go to the Dragon"
+        onclick="changePage('dragonRoom', 'dragonRoom2');">
+    </div>
         
     <div id="dragonRoom2">
-    <p>The Dragon is blocking your way to the princess</P>
-     <input type="button" value="Fight"
-     onclick="fight3();">
-     <br>
-     <input id="moveOnButton3" style="visibility:hidden" type="button" value="Go unlock the door to the Princess"
-     onclick="changePage('dragonRoom2','unlockDoor');"> 
-     <input id="gameOverButton3" style="visibility:hidden" type="button" value="Start Over"
-     onclick="changePage('dragonRoom2','startPage');">
- </div>
-    
-<div id="unlockDoor">
-  <p>You have unlocked the door to where the princess is prisoner<br>
-    Go reunit with your love!</P>
-    <input type="button" value="Go to the Princess"
-    onclick="changePage('unlockDoor','princessRoom');">
+        <p>The Dragon is blocking your way to the princess</P>
+        <input type="button" value="Fight"
+        onclick="fight3();">
+        <br>
+        <input id="moveOnButton3" style="visibility:hidden" type="button" value="Go unlock the door to the Princess"
+        onclick="changePage('dragonRoom2','unlockDoor');"> 
+        <input id="gameOverButton3" style="visibility:hidden" type="button" value="Start Over"
+        onclick="changePage('dragonRoom2','startPage');">
     </div>
- <div id="princessRoom">
- <p> You have saved the Princess! <br>
-     You have won the Game!</P>
-     <br>
-    <p> Your village has thrown you a party to celebrate<br>
-        Go back to your village to Party!</P>
-     <input type="button" value="Go to the Party"
-     onclick="changePage('princessRoom','pickDress');">
-     </div>
- <div id="pickDress">
- <p> Your princess is going to need an outfit to wear to the party!<br>
- Chose what she will wear:</P>
-<br>
-  <img src="dress1.gif" alt="dress1">
-  <img src="dress2.gif" alt ="dress2">
-  <img src="dress3.gif" alt="dress3">
-  <br>
-  <input type="button" Value="Dress One"
-  onclick="changePage('pickDress','villageParty');">
-    <input type="button" Value="Dress Two"
-  onclick="changePage('pickDress','villageParty');">
-  <input type="button" Value="Dress Three"
-  onclick="changePage('pickDress','villageParty');">
-</div>
-<div id="villageParty">
-   <p>Ask your Princess to dance with you:</P>
-   <input type="button" value="Dance?"
-   onclick="dance()";>
-   <br>
-   <input id="gameOverButton4" style="visibility:hidden" type="button" value="Go on living your life with your Princess!"
-   onclick="changePage('villageParty','startPage');">
-   </div>
+    
+    <div id="unlockDoor">
+        <p>You have unlocked the door to where the princess is prisoner<br>
+           Go reunit with your love!</P>
+        <input type="button" value="Go to the Princess"
+        onclick="changePage('unlockDoor','princessRoom');">
+    </div>
+    
+    <div id="princessRoom">
+        <p> You have saved the Princess! <br>
+            You have won the Game!</P>
+        <br>
+        <p> Your village has thrown you a party to celebrate<br>
+            Go back to your village to Party!</P>
+        <input type="button" value="Go to the Party"
+        onclick="changePage('princessRoom','pickDress');">
+    </div>
+    
+    <div id="pickDress">
+        <p> Your princess is going to need an outfit to wear to the party!<br>
+            Chose what she will wear:</P>
+        <br>
+        <img src="dress1.gif" alt="dress1">
+        <img src="dress2.gif" alt ="dress2">
+        <img src="dress3.gif" alt="dress3">
+        <br>
+        <input type="button" Value="Dress One"
+        onclick="changePage('pickDress','villageParty');">
+        <input type="button" Value="Dress Two"
+        onclick="changePage('pickDress','villageParty');">
+        <input type="button" Value="Dress Three"
+        onclick="changePage('pickDress','villageParty');">
+    </div>
+    
+    <div id="villageParty">
+        <p>Ask your Princess to dance with you:</P>
+        <input type="button" value="Dance?"
+        onclick="dance()";>
+        <br>
+        <input id="gameOverButton4" style="visibility:hidden" type="button" value="Go on living your life with your Princess!"
+        onclick="changePage('villageParty','startPage');">
+    </div>
   </body>
 </html>
   
