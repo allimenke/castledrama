@@ -31,9 +31,11 @@ function princeName(pname)
 
 function help()
 {
-  alert('To play the game you must first pick the name of the prince that will help save the princess. '+
-  'You will have to navigate through each room but choosing if you would like to run, fight, or pick up certain items. '+
-  'When you encounter different enemies, only certain items will defeat them. '+ 'Best of luck saving the princess!');
+  alert('The first step to play this game is to choose the name of the prince that will help save the princess. '+
+  'As you navigate through the game, each room will have different choices. '+ 'There may be options to run, fight, jump, or '+
+  'pick up certain items. ' +'It is your choice to choose which is the right option. '+ 'Many times during the game you will '+
+  'encounter options that will take you back to the start page but which option does that? ' + 'Play Castle Drama to find out '+
+  'if you can save the princess. '+ 'Best of luck!');
 }
 
 function sword(pickup)
