@@ -148,10 +148,26 @@
  <div id="pickDress">
  <p> Your princess is going to need an outfit to wear to the party!<br>
  Chose what she will wear:</P>
-
-
-
+<br>
+  <img src="dress1.gif" alt="dress1">
+  <img src="dress2.gif" alt ="dress2">
+  <img src="dress3.gif" alt="dress3">
+  <br>
+  <input type="button" Value="Dress One"
+  onclick="changePage('pickDress','villageParty');">
+    <input type="button" Value="Dress Two"
+  onclick="changePage('pickDress','villageParty');">
+  <input type="button" Value="Dress Three"
+  onclick="changePage('pickDress','villageParty');">
 </div>
+<div id="villageParty">
+   <p>Ask your Princess to dance with you:</P>
+   <input type="button" value="Dance?"
+   onclick="dance()";>
+   <br>
+   <input id="gameOverButton4" style="visibility:hidden" style="visibility:hidden" value="Go on living your life with your Princess!"
+   onclick="changePage('villageParty','startPage');">
+   </div>
   </body>
 </html>
   
