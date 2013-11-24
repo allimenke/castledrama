@@ -167,7 +167,7 @@ document.getElementById('moveOnButton2').style.visibility="visible";
 }
 function goToPrincess()
 {
-document.getElementById('moveonButton3').style.visibility="visible";
+document.getElementById('moveOnButton3').style.visibility="visible";
 }
 function reStart2()
 {
