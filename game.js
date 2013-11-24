@@ -25,7 +25,7 @@ hasKey: 'no',
 
 function princeName(pname)
 {
-alert('Your name is '+ pname);
+alert('Your name is Prince '+ pname);
 prince.name=pname;
 pickedName();
 }
@@ -59,7 +59,7 @@ function fight1()
 {
 
   if(prince.hasSword==='yes'){
-  alert('You have defeated the Knight. ' + 'Move onto the next room');
+  alert('You have defeated the Knight prince ' + pname + '. ' 'Move onto the next room');
 
   moveOn();
   }
@@ -72,7 +72,7 @@ function fight1()
 
 function jump()
 {
-alert('You commited suicide, Game Over prince ' + pname);
+alert('You commited suicide, Game Over Prince ' + pname);
 reStart();
 } 
 
