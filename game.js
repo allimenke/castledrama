@@ -19,6 +19,7 @@ var prince={
 name: '',
 hasSword: 'yes',
 hasSpear: 'yes',
+hasKey: 'no',
 };
 
 
@@ -59,6 +60,7 @@ function fight1()
 
   if(prince.hasSword==='yes'){
   alert('You have defeated the Knight' + 'Move onto the next room');
+
   moveOn();
   }
  else
@@ -86,6 +88,7 @@ reStart2();
 else if(enemy==='knight')
 {
 alert('You defeated the Knight!  You take the key from the Knight and advance to the next room');
+prince.hasKey='yes';
 goOn();
 }
 }
