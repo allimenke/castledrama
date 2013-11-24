@@ -10,12 +10,12 @@
     <h1>Castle Drama</h1>
     
 	  <div id="startPage">  
-    	 <img src="castle.gif" alt="Castle">
+    	 <img src="castle.gif" alt="Castle" height=300px width=250px>
     	 <br>
     	 <input type="button" value="Start the Game"
        onclick="changePage('startPage','pickName');">
        </br>
-     	 <input type="button" value="Click for Help"
+     	 <input type="button" value="Game Directions"
        onclick="help();">
     </div>
     
@@ -27,8 +27,8 @@
          <p>Once upon a time in medieval times there was a war.  It was between Allitopia and Plante Castle(the enemy).<br> 
           It was a long and deadly war.  One day the Plante knights captured the princess of Allitopia and took<br>
           her back to the castle and threw her in the dungeon.  In order to make sure she did not <br>
-          escape, they made the vicious dragon guard the dungeon door.  Once the prince found out <br>
-          the game begins</br></p>
+          escape, they made the vicious dragon guard the dungeon door.  You mush go to Plante Castle and  <br>
+          save your princess!</br></p>
     
          <input id="enteredName" style="visibility:hidden" type="button" value="Next"
          onclick="changePage('pickName','enterCastle');">
@@ -71,11 +71,11 @@
     
     <div id="bridgeWalk">
         <p> A knight is in your path to the other side!<br>
-            Chose what to do!</br></p>
+            Choose what to do!</br></p>
         <img src="knight.gif" alt="knight" height=250px width=200px><br>
         <p>You can fight the Knight,<br>
            Run back to castle entrance<br>
-           Or Jump off the Bridge!</br></p>            
+           Or jump off the bridge!</br></p>            
         <input type="button" value="Fight"
         onclick="fight1();">
         <input type="button" value="Run"
@@ -93,8 +93,8 @@
     <div id="longHallway">
       <h5>You Have Entered a Long Hallway</h5>
         <p>You have encountered either a wizard or a knight</P></br>
-        <p>Chose fight to find out which you encountered or Run away</p>
-        <p>You can Fight or Run</P>
+        <p>Choose fight to find out which you encountered or run away</p>
+        <p>You can Fight or Run:</P>
         <br>
         <input type="button" value="Fight"
         onclick="fight2();">
@@ -108,10 +108,10 @@
     </div>
     
     <div id="dragonRoom">
-        <p>You have Enter the Dragon Room</p><br>
+        <p>You Have Enter the Dragon Room</p><br>
         <img src="spear.gif" alt="spear" height=250px width=200px>
         <p>There is a spear on the floor<br>
-        Do you wish to pick it up?</p>
+           Do you wish to pick it up?</p>
         <input type="button" value="Yes"
         onclick="spear(true);"> 
         <input type="button" value="No"
@@ -122,7 +122,7 @@
     </div>
         
     <div id="dragonRoom2">
-        <p>The Dragon is blocking your way to the princess</P>
+        <p>The Dragon is blocking your way to the Princess</P>
         <img src ="dragon.gif" alt="dragon">
         <br>
         <input type="button" value="Fight"
@@ -135,7 +135,7 @@
     </div>
     
     <div id="unlockDoor">
-        <p>You have unlocked the door to where the princess is prisoner<br>
+        <p>You have unlocked the door to where the princess is prisoner.<br>
            Go reunit with your love!</P>
         <img src="dungen.gif" alt="dungen" height=250px width=200px><br>
         <input type="button" value="Go to the Princess"
@@ -146,7 +146,7 @@
         <p> You have saved the Princess! <br>
         <img src="princess.gif" alt="princess" height=250px width=200px><br>
         <p>You have won the Game!</P><br>
-        <p> Your village has thrown you a party to celebrate<br>
+        <p> Your village has thrown you a party to celebrate.<br>
             Go back to your village to Party!</P>
         <input type="button" value="Go to the Party"
         onclick="changePage('princessRoom','pickDress');">
@@ -154,7 +154,7 @@
     
     <div id="pickDress">
         <p> Your princess is going to need an outfit to wear to the party!<br>
-            Chose what she will wear:</P>
+            Choose what she will wear:</P>
         <br>
         <img src="dress1.gif" alt="dress1">
         <img src="dress2.gif" alt ="dress2">
