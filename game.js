@@ -59,7 +59,7 @@ function fight1()
 {
 
   if(prince.hasSword==='yes'){
-  alert('You have defeated the Knight Prince ' + prince.name + '!' +  'Move onto the next room');
+  alert('You have defeated the Knight Prince ' + prince.name + '! ' +  'Move onto the next room');
 
   moveOn();
   }
@@ -87,7 +87,7 @@ reStart2();
 }
 else if(enemy==='knight')
 {
-alert('You defeated the Knight Prince ' + prince.name + '!' + 'You take the key from the Knight and advance to the next room');
+alert('You defeated the Knight Prince ' + prince.name + '! ' + 'You take the key from the Knight and advance to the next room');
 prince.hasKey='yes';
 goOn();
 }
@@ -113,7 +113,7 @@ function fight3()
 {
 
   if(prince.hasSpear==='yes'){
-  alert('You have defeated the Dragon Prince ' + prince.name + '!' + 'Go Save the Princess');
+  alert('You have defeated the Dragon Prince ' + prince.name + '! ' + 'Go Save the Princess');
   goToPrincess();
   }
  else
@@ -134,7 +134,7 @@ reStart4();
 }
 else if(dancing==='slap')
 {
-alert('The princess is mad at you for letting her get trapped! '+ 'She slaps you in the face. Play again');
+alert('The princess is mad at you for letting her get trapped! '+ 'She slaps you in the face. ' + 'Play again');
 reStart4();
 }
 }
