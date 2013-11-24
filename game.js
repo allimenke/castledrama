@@ -123,6 +123,22 @@ function fight3()
  }
 }
 
+function dance()
+{
+var party = ['dance','slap'];
+dancing=party[Math.floor(Math.random()*party.length)];
+if(dancing==='dance')
+{
+alert('The princess chose to dance the night away with you! Play again!');
+reStart4();
+}
+else if(dancing==='slap')
+{
+alert('The princess is mad at you for letting her get trapped!  She slaps you in the face. Play again');
+reStart4();
+}
+}
+
 
 
 
@@ -164,6 +180,10 @@ function reStart3()
 document.getElementById('gameOverButton3').style.visibility="visible";
 } 
 
+function reStart4()
+{
+document.getElementById('gameOverButton4').style.visibility="visible";
+} 
 
 
 
