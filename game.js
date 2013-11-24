@@ -59,20 +59,20 @@ function fight1()
 {
 
   if(prince.hasSword==='yes'){
-  alert('You have defeated the Knight' + 'Move onto the next room');
+  alert('You have defeated the Knight. ' + 'Move onto the next room');
 
   moveOn();
   }
  else
  {
- alert('The knight Killed You!'+'Game Over!');
+ alert('The knight Killed You! '+'Game Over!');
  reStart();
  }
 }
 
 function jump()
 {
-alert('You commited suicide, Game Over');
+alert('You commited suicide, Game Over prince ' + pname);
 reStart();
 } 
 
@@ -82,12 +82,12 @@ var person = ['wizard','knight'];
 enemy=person[Math.floor(Math.random()*person.length)];
 if(enemy==='wizard')
 {
-alert('The Wizard defeated you!  Game Over');
+alert('The Wizard defeated you! ' + 'Game Over');
 reStart2();
 }
 else if(enemy==='knight')
 {
-alert('You defeated the Knight!  You take the key from the Knight and advance to the next room');
+alert('You defeated the Knight! ' + 'You take the key from the Knight and advance to the next room');
 prince.hasKey='yes';
 goOn();
 }
@@ -113,12 +113,12 @@ function fight3()
 {
 
   if(prince.hasSpear==='yes'){
-  alert('You have defeated the Dragon' + 'Go Save the Princess');
+  alert('You have defeated the Dragon. ' + 'Go Save the Princess');
   goToPrincess();
   }
  else
  {
- alert('The Dragon Killed You!'+'Game Over!');
+ alert('The Dragon Killed You! '+'Game Over!');
  reStart3();
  }
 }
@@ -129,12 +129,12 @@ var party = ['dance','slap'];
 dancing=party[Math.floor(Math.random()*party.length)];
 if(dancing==='dance')
 {
-alert('The princess chose to dance the night away with you! Play again!');
+alert('The princess chose to dance the night away with you! '+ 'Play again!');
 reStart4();
 }
 else if(dancing==='slap')
 {
-alert('The princess is mad at you for letting her get trapped!  She slaps you in the face. Play again');
+alert('The princess is mad at you for letting her get trapped! '+ 'She slaps you in the face. Play again');
 reStart4();
 }
 }
