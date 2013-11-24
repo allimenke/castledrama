@@ -59,7 +59,7 @@ function fight1()
 {
 
   if(prince.hasSword==='yes'){
-  alert('You have defeated the Knight prince ' + pname + '. ' 'Move onto the next room');
+  alert('You have defeated the Knight prince ' +  'Move onto the next room');
 
   moveOn();
   }
